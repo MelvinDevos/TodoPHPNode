@@ -14,6 +14,8 @@ if (!isset($_SESSION['id'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
     <title>Todo app</title>
 
 
@@ -24,7 +26,7 @@ if (!isset($_SESSION['id'])) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
     <!-- JQUERRY CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
 
@@ -61,11 +63,11 @@ if (!isset($_SESSION['id'])) {
     <main class="container">
         <!-- add todo container -->
         <div class="row pt-5 gy-4 justify-content-center">
-            <div class="col-10 rounded bg-white  shadow p-4">
-                <form class="container ">
+            <div class="col-md-10 rounded bg-white  shadow p-4">
+                <form id="form-add" class="container ">
                     <div class="row">
-                        <input placeholder="TODO toevoegen:" class="col-11 px-4" required type="text" name="todo-title" class="form-control" id="todo-title">
-                        <button class="col-1 btn-success d-flex align-items-center justify-content-center" type="submit" name="btn-login" class="btn btn-success">
+                        <input placeholder="TODO toevoegen:" class="col-10 col-md-11 px-4" required type="text" name="todo-title" class="form-control" id="todo-title">
+                        <button class="col-1 btn-success d-flex align-items-center justify-content-center" type="submit" class="btn btn-success">
                             <span class="material-icons">add</span>
                         </button>
                     </div>
@@ -74,11 +76,11 @@ if (!isset($_SESSION['id'])) {
         </div>
 
         <div class="row py-5 gy-4 justify-content-center">
-            <div class="col-10 rounded bg-white  shadow p-4">
-                <div class="row container-fluid gy-4">
+            <div class="col-md-10 rounded bg-white  shadow p-4">
+                <div id="todo-container" class="row container-fluid gy-4">
 
 
-                    <div class="card mx-auto col-lg-5">
+                    <!-- <div class="card mx-auto col-lg-5">
                         <div class="card-body d-flex align-items-center">
                             <h5 class="card-title m-0">Take trash outside</h5>
                             <button class="btn ms-auto d-flex align-items-center justify-content-center border border-success">
@@ -88,43 +90,7 @@ if (!isset($_SESSION['id'])) {
                         <div class="card-footer">
                             <small class="text-muted">18/05/2021 01:49</small>
                         </div>
-                    </div>
-
-                    <div class="card mx-auto col-lg-5">
-                        <div class="card-body d-flex align-items-center">
-                            <h5 class="card-title m-0">Take trash outside</h5>
-                            <button class="btn ms-auto d-flex align-items-center justify-content-center border border-success">
-                                <span class="material-icons text-success">done_outline</span>
-                            </button>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">18/05/2021 01:49</small>
-                        </div>
-                    </div>
-
-                    <div class="card mx-auto col-lg-5">
-                        <div class="card-body d-flex align-items-center">
-                            <h5 class="card-title m-0">Take trash outside</h5>
-                            <button class="btn ms-auto d-flex align-items-center justify-content-center border border-success">
-                                <span class="material-icons text-success">done_outline</span>
-                            </button>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">18/05/2021 01:49</small>
-                        </div>
-                    </div>
-
-                    <div class="card mx-auto col-lg-5">
-                        <div class="card-body d-flex align-items-center">
-                            <h5 class="card-title m-0">Take trash outside</h5>
-                            <button class="btn ms-auto d-flex align-items-center justify-content-center border border-success">
-                                <span class="material-icons text-success">done_outline</span>
-                            </button>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">18/05/2021 01:49</small>
-                        </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
